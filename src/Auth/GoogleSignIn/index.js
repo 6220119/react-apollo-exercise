@@ -11,8 +11,6 @@ export default {
     clientId,
 
     init(signedInChangedFn) {
-        console.log('HAHA', process.env.GOOGLE_CLIENT_ID);
-
         window.gapi.load('client:auth2', () => {
             window.gapi.client
               .init({
