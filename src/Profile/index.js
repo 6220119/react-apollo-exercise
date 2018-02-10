@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './Profile.css'
+import styles from './Profile.css'
 
 class Profile extends Component {
     render() {
         return (
-            <section className="profile">
+            <section className={styles.Profile}>
                 <dl>
                     <dt>Full Name: {this.props.fullname}</dt>
                     <dt>Title: {this.props.title}</dt>

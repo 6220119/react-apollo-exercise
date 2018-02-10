@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './ProfileList.css';
+import styles from './ProfileList.css';
 
 class ProfileList extends Component {
     render() {
         return (
-            <section className="profileList">
+            <section className={styles.ProfileList}>
                 <ul>
                     {this.props.profiles.map(profile =>
                         <li key={profile.id}>

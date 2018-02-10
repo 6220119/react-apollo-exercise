@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import styles from './App.css';
 import RenderProfiles from './ProfileList/RenderProfiles';
 import RenderProfile from './Profile/RenderProfile';
 import AuthControls from './Auth/AuthControls'
@@ -27,10 +27,10 @@ class App extends Component {
   render() {
 
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Demo React/Apollo</h1>
+      <div className={styles.App}>
+        <header className={styles.AppHeader}>
+          <img src={logo} className={styles.AppLogo} alt="logo" />
+          <h1 className={styles.AppTitle}>Demo React/Apollo</h1>
         </header>
         <br/>
         {

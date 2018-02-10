@@ -30,9 +30,11 @@ class RenderProfile extends Component {
                 <div><a style={{cursor: 'pointer'}} role="button" onClick={() => this.props.onSelected(null)}>← Go back</a></div>
                 <br/>
                 {this.state.loading &&
-                    <p>Loading Details...</p>
+                    <div>
+                        <p>Loading Details...</p>
+                        <br/>
+                    </div>
                 }
-                <br/>
                 {!this.state.loading &&
                     <div>
                         <Profile 
